@@ -1,0 +1,6 @@
+FROM: centos:centos7
+MAINTAINER Ghanshyam sharma
+RUN yum install httpd -y
+COPY index.html /var/www/html
+CMD ["/user/sbin/httpd","-D", "FOREGROUND"]
+EXPOSE 80
