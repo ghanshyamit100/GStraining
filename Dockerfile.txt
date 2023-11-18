@@ -1,4 +1,4 @@
-FROM: centos:centos7
+FROM centos:centos7
 MAINTAINER Ghanshyam sharma
 RUN yum install httpd -y
 COPY index.html /var/www/html
